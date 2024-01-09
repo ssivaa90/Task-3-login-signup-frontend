@@ -13,7 +13,7 @@ const Register = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         
-        axios.post( 'https://task-3-login-signup-backend.vercel.app/', {name, email, password})
+        axios.post( 'https://task-3-login-signup-backend.vercel.app/register', {name, email, password})
         .then(result => {
             console.log(result);
             if(result.data === "Already registered"){
