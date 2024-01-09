@@ -12,7 +12,7 @@ const Login = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         
-        axios.post( 'https://vercel.com/ssivaas-projects/task-3-login-signup-backend/Es2HJMewG5VBs4RsDAtLC3VP5zqX', {email, password})
+        axios.post( 'https://task-3-login-signup-backend.vercel.app/', {email, password})
         .then(result => {
             console.log(result);
             if(result.data === "Success"){
